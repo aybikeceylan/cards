@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    126deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 105, 1) 38%,
+    rgba(0, 202, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 40vw;
+  height: 80vh;
+}
+.head {
+  width: 100%;
+  height: 20%;
+}
+.head img {
+  width: 100%;
+  height: 100%;
+}
+.cardApp {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: chocolate;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
+}
+.card {
+  width: 30%;
+  height: 20%;
+}
