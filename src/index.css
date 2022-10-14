@@ -13,11 +13,13 @@
   );
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  width: 100vw;
+  height: 100vh;
 }
 .main {
-  width: 40vw;
-  height: 80vh;
+  width: 30vw;
+  height: 65vh;
 }
 .head {
   width: 100%;
@@ -30,18 +32,18 @@
 .cardApp {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .title {
   font-size: 2rem;
   text-align: center;
-  color: chocolate;
+  color: rgb(243, 119, 31);
 }
 .items {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid red;
-}
-.card {
-  width: 30%;
-  height: 20%;
+  border-style: none;
+  border-radius: 20px;
+  background-color: aqua;
 }

@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import ListGroup from 'react-bootstrap/ListGroup';
-import Card from 'react-bootstrap/Card';
 import "./cardLan.css"
 
 const CardLan = ({ img, name, options }) => {
@@ -10,24 +8,23 @@ const CardLan = ({ img, name, options }) => {
         setİsFront(!isFront)
     }
     return (
-        <div>
-            <div className="card" onClick={handleClick}>
-                {isFront
-                    ?
-                    <Card>
-                        <Card.Img variant="top" src={img} />
-                    </Card>
-                    :
-                    <Card>
-                        <ListGroup variant="flush">
-                            <ListGroup.Item>{name}</ListGroup.Item>
-                            <ListGroup.Item>{options[0]}</ListGroup.Item>
-                            <ListGroup.Item>{options[1]}</ListGroup.Item>
-                        </ListGroup>
-                    </Card>
-                }
+        <div className="card" onClick={handleClick}>
+            {isFront
+                ?
+                <div className="image">
+                    <img src={img} alt={name} />
+                    <p>{name}</p>
+                </div>
+                :
+                <div className="list">
+                    <ul>
+                        <li>{options[0]}</li>
+                        <li>{options[1]}</li>
+                        <li>{options[2]}</li>
+                    </ul>
+                </div>
+            }
 
-            </div>
         </div>
     )
 }
