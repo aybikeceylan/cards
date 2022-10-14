@@ -1,6 +1,7 @@
 .card {
   width: 40%;
-  height: 90px;
+  max-height: 90px;
+  min-height: 90px;
   margin: 1rem;
   display: flex;
   align-items: center;
