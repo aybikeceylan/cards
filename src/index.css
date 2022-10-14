@@ -20,7 +20,8 @@
 }
 .main {
   width: 30vw;
-  height: 65vh;
+  max-height: 500px;
+  min-height: 500px;
 }
 .head {
   width: 100%;
