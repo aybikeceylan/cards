@@ -50,6 +50,18 @@
   background-color: aqua;
 }
 @media screen and (max-width: 500px) {
+  .App {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      126deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 121, 105, 1) 38%,
+      rgba(0, 202, 255, 1) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
   .main {
     width: 80%;
     margin: 0 auto;
