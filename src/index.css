@@ -60,6 +60,7 @@
     );
     width: 100vw;
     height: 100vh;
+    overflow: scroll;
   }
   .main {
     width: 80%;
