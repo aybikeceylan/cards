@@ -25,3 +25,9 @@
 .list {
   font-size: 0.8rem;
 }
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
